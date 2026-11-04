@@ -1,0 +1,2 @@
+# Required storage acceptance fixture
+Benign single HTTP service, no dependencies or external requests. Stores a generated test marker and boot count at /app/data/acceptance.json. Only disposable acceptance data; never mount user data here. Requests do not modify state. Used for ordinary gated deployment, restart/redeploy persistence and isolated required-storage refusal checks. No GitHub Actions.
